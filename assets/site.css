@@ -182,8 +182,10 @@ figcaption{font-size:14px;color:var(--stone);margin-top:10px}
   .wrap{padding:0 16px}
   .nav{padding:12px 16px}
   .brand-text{font-size:17px}
-  .hero{min-height:82vh}
-  .hero-inner{padding:0 16px 28px}
+  .hero{min-height:0;background:var(--night);justify-content:flex-start}
+  .hero-img{position:relative;inset:auto;height:auto;aspect-ratio:4/3;object-position:60% 55%}
+  .hero-shade{inset:auto;top:0;left:0;right:0;width:100%;aspect-ratio:4/3;background:linear-gradient(180deg,rgba(21,22,15,0) 55%,var(--night) 100%)}
+  .hero-inner{padding:4px 16px 28px}
   .stats{grid-template-columns:1fr 1fr;width:calc(100% - 32px)}
   .stats div{padding:12px 0 14px}
   .intro,.days,.fleet-wrap,.incl-cols,.tour-grid{grid-template-columns:1fr;gap:40px}
