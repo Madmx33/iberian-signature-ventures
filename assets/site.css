@@ -201,3 +201,6 @@ figcaption{font-size:14px;color:var(--stone);margin-top:10px}
   .map .places text{font-size:18px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Fraunces: keine schiefen Wonky-Buchstaben */
+body{font-variation-settings:"WONK" 0}
