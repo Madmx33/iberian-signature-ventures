@@ -116,8 +116,21 @@ figcaption{font-size:14px;color:var(--stone);margin-top:10px}
 .spec{list-style:none;padding:0;margin:28px 0;border-top:1px solid rgba(243,238,228,.2)}
 .spec li{display:grid;grid-template-columns:140px 1fr;padding:11px 0;border-bottom:1px solid rgba(243,238,228,.2);font-size:16px}
 .spec span{opacity:.65}
-.fleet-fig{margin:0}
-.fleet-fig img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.fleet-wrap{grid-template-columns:1fr;max-width:1200px}
+.fleet-text{max-width:720px}
+.cars{display:flex;flex-direction:column;gap:72px;margin-top:72px}
+.car{border-top:1px solid rgba(243,238,228,.2);padding-top:28px}
+.car-head{display:grid;grid-template-columns:280px 1fr;gap:32px;align-items:baseline;margin-bottom:24px}
+.car-head h3{font-size:32px;margin:0;color:var(--sand)}
+.car-head p{margin:0;max-width:58ch;opacity:.8}
+.car-views{display:grid;grid-template-columns:1.35fr 1fr;gap:16px}
+.car-views figure{margin:0;position:relative}
+.car-views img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.car-views figure:first-child img{aspect-ratio:auto;height:100%;min-height:100%}
+.car-views figcaption{position:absolute;left:12px;bottom:12px;margin:0;background:rgba(21,22,15,.75);color:var(--sand);font-size:13px;padding:4px 10px}
+.day-photo{margin:16px 0 8px}
+.day-photo img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.day-photo figcaption a{color:inherit}
 
 /* Included */
 .included{padding-top:120px;padding-bottom:80px}
@@ -171,6 +184,10 @@ figcaption{font-size:14px;color:var(--stone);margin-top:10px}
   .tours,.fleet,.route,.contact{padding:72px 0}
   .tour-body{padding:24px 20px 28px}
   .days-fig{position:static}
+  .car-head{grid-template-columns:1fr;gap:8px}
+  .car-views{grid-template-columns:1fr}
+  .car-views figure:first-child img{aspect-ratio:4/3;height:auto}
+  .cars{gap:48px;margin-top:48px}
   .days-fig img{aspect-ratio:16/10}
   .faq{padding-top:24px;padding-bottom:72px}
   .form{grid-template-columns:1fr}

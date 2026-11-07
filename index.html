@@ -75,8 +75,8 @@
         <div class="tour-body">
           <p class="tour-meta">7 Tage · One-Way · ca. 1.100 km</p>
           <h3>Cimas Atlántico</h3>
-          <p class="tour-route">Barcelona → San Sebastián</p>
-          <p>Die direkte Linie durch das Gebirge: Val d'Aran, Sobrarbe, Aragón und Navarra, dann hinunter an die baskische Küste. Fünf Fahrtage, Abschluss mit Pintxos in der Altstadt von San Sebastián. Die Autos bringen wir zurück.</p>
+          <p class="tour-route">Terramar → San Sebastián</p>
+          <p>Start auf der historischen Rennstrecke von Terramar, dann die direkte Linie durch das Gebirge: Val d'Aran, Boltaña, Aragón und Navarra, hinunter an die baskische Küste. Fünf Fahrtage, Abschluss mit Pintxos in San Sebastián. Die Autos bringen wir zurück.</p>
           <ul class="tour-facts">
             <li><span>Reisetage</span>7 (5 Fahrtage)</li>
             <li><span>Übernachtungen</span>6</li>
@@ -92,10 +92,10 @@
         <div class="tour-body">
           <p class="tour-meta">9 Tage · Rundreise · ca. 1.500 km</p>
           <h3>Cimas Gran Vuelta</h3>
-          <p class="tour-route">Barcelona → San Sebastián → Bardenas Reales → Barcelona</p>
-          <p>Die große Runde mit zwei Standtagen: einer im Herzen der Pyrenäen, einer am Atlantik. Auf dem Rückweg die Halbwüste der Bardenas Reales, mit Schotter, Tafelbergen und sehr viel Himmel.</p>
+          <p class="tour-route">Terramar → Boltaña → San Sebastián → Bardenas Reales → Terramar</p>
+          <p>Die große Runde von Terramar zurück nach Terramar, mit zwei Pausentagen: im Klosterhotel von Boltaña und am Atlantik. Auf dem Rückweg die Halbwüste der Bardenas Reales und eine Nacht im Hotel Aire de Bardenas.</p>
           <ul class="tour-facts">
-            <li><span>Reisetage</span>9 (5 Etappen, 2 Standtage)</li>
+            <li><span>Reisetage</span>9 (5 Etappen, 2 Pausentage)</li>
             <li><span>Übernachtungen</span>8</li>
             <li><span>Rückreise</span>ab Barcelona</li>
           </ul>
@@ -120,36 +120,37 @@
 
     <svg class="map" viewBox="0 0 820 520" role="img" aria-label="Schematische Karte Nordspaniens mit dem Verlauf der gewählten Tour">
       <text x="40" y="34" class="sea">Golf von Biskaya</text>
-      <text x="690" y="512" class="sea">Mittelmeer</text>
+      <text x="728" y="514" class="sea">Mittelmeer</text>
       <path class="ridge" d="M100 70 C 170 100, 230 130, 280 140 S 420 170, 500 182 S 620 215, 660 225 S 760 238, 815 246"/>
       <text x="420" y="152" class="ridge-label">Pyrenäen</text>
       <text x="600" y="120" class="country">Frankreich</text>
       <text x="300" y="500" class="country">Spanien</text>
 
       <g class="route-line" data-tour="atlantico">
-        <polyline points="747,470 760,355 709,249 528,192 422,251 312,219 253,157 213,147 158,98 83,60"/>
+        <polyline points="747,470 690,502 695,428 696,319 528,192 410,245 312,219 253,157 213,147 158,98 83,60"/>
       </g>
-      <g class="route-line" data-tour="vuelta" hidden>
-        <polyline points="747,470 760,355 709,249 528,192 422,251 312,219 253,157 213,147 83,60 160,298 136,238 160,298 499,421 760,355 747,470"/>
+      <g class="route-line" data-tour="vuelta">
+        <polyline points="747,470 690,502 695,428 696,319 528,192 410,245 312,219 253,157 213,147 83,60 160,298 144,328 499,421 690,502"/>
       </g>
 
       <g class="places">
-        <g data-show="both"><circle cx="747" cy="470" r="6"/><text x="728" y="476" text-anchor="end">Barcelona</text></g>
-        <g data-show="both"><circle cx="760" cy="355" r="4"/><text x="748" y="342" text-anchor="end">Osona</text></g>
-        <g data-show="both"><circle cx="709" cy="249" r="4"/><text x="696" y="270" text-anchor="end">Cerdanya</text></g>
+        <g data-show="both"><circle cx="747" cy="470" r="6"/><text x="756" y="456">Barcelona</text></g>
+        <g data-show="both"><circle cx="690" cy="502" r="6" class="hl"/><text x="678" y="507" text-anchor="end">Terramar</text></g>
+        <g data-show="both"><circle cx="695" cy="428" r="4"/><text x="683" y="433" text-anchor="end">Montserrat</text></g>
+        <g data-show="both"><circle cx="696" cy="319" r="4"/><text x="708" y="324">Berguedà</text></g>
         <g data-show="both"><circle cx="528" cy="192" r="4"/><text x="540" y="212">Val d'Aran</text></g>
-        <g data-show="both"><circle cx="422" cy="251" r="4"/><text x="430" y="274">Aínsa</text></g>
+        <g data-show="both"><circle cx="410" cy="245" r="6" class="hl"/><text x="418" y="270">Boltaña</text></g>
         <g data-show="both"><circle cx="312" cy="219" r="4"/><text x="318" y="242">Jaca</text></g>
         <g data-show="both"><circle cx="253" cy="157" r="4"/><text x="262" y="176">Roncal</text></g>
         <g data-show="both"><circle cx="213" cy="147" r="4"/><text x="200" y="128" text-anchor="end">Irati</text></g>
         <g data-show="atlantico"><circle cx="158" cy="98" r="4"/><text x="150" y="122" text-anchor="end">Baztán</text></g>
         <g data-show="both"><circle cx="83" cy="60" r="6"/><text x="74" y="86" text-anchor="middle">San Sebastián</text></g>
-        <g data-show="vuelta"><circle cx="136" cy="238" r="4"/><text x="124" y="236" text-anchor="end">Olite</text></g>
-        <g data-show="vuelta"><circle cx="160" cy="298" r="6" class="hl"/><text x="148" y="320" text-anchor="end">Bardenas Reales</text></g>
+        <g data-show="vuelta"><circle cx="160" cy="298" r="4"/><text x="172" y="302">Bardenas Reales</text></g>
+        <g data-show="vuelta"><circle cx="144" cy="328" r="6" class="hl"/><text x="132" y="350" text-anchor="end">Tudela</text></g>
         <g data-show="vuelta"><circle cx="499" cy="421" r="4"/><text x="499" y="444" text-anchor="middle">Lleida</text></g>
       </g>
     </svg>
-    <p class="map-note">Schematische Darstellung. Die genaue Route wird bis Frühjahr 2027 abgefahren und festgelegt.</p>
+    <p class="map-note">Orange markiert: Terramar, Hotel Monasterio de Boltaña und Hotel Aire de Bardenas bei Tudela. Schematische Darstellung. Die genaue Route wird bis Frühjahr 2027 abgefahren und festgelegt.</p>
   </div>
 </section>
 
@@ -157,27 +158,33 @@
   <div class="days-panel" id="tag-atlantico" data-tour="atlantico">
     <h2 class="section-title">Cimas Atlántico, Tag für Tag.</h2>
     <ol class="day-list">
-      <li><h3>Tag 1 · Ankunft in Barcelona</h3><p>Abholung am Flughafen, Fahrt ins Hinterland nach Osona. Fahrzeugübergabe, Briefing zu Auto, Funk und Konvoi. Willkommensessen.</p></li>
-      <li><h3>Tag 2 · Osona → Val d'Aran</h3><p>Durch die Cerdanya und über den Port de la Bonaigua ins Val d'Aran. Erster Schotterabschnitt im Alt Urgell, bevor es auf über 2.000 Meter hinaufgeht.</p><p class="km">ca. 240 km</p></li>
-      <li><h3>Tag 3 · Val d'Aran → Aínsa</h3><p>Durch die Ribagorza nach Sobrarbe. Mittagspause an einem Bergsee, am Abend die mittelalterliche Plaza Mayor von Aínsa.</p><p class="km">ca. 190 km</p></li>
-      <li><h3>Tag 4 · Aínsa → Jaca</h3><p>Am Rand des Nationalparks Ordesa entlang, dann über Pisten im Valle de Tena. Der schotterreichste Tag der Reise.</p><p class="km">ca. 180 km</p></li>
-      <li><h3>Tag 5 · Jaca → Navarra</h3><p>Durch die Täler von Ansó und Roncal in den Buchenwald von Irati, einen der größten Europas. Übernachtung im Baztán-Tal.</p><p class="km">ca. 220 km</p></li>
+      <li><h3>Tag 1 · Ankunft und Autódromo de Terramar</h3><p>Abholung am Flughafen Barcelona, Fahrt nach Sitges. Fahrzeugübergabe auf dem Autódromo de Terramar, der historischen Steilwand-Rennstrecke von 1923, mit exklusiven Einführungsrunden. Willkommensessen am Meer.</p>
+        <figure class="day-photo"><img src="assets/img/terramar-steilkurve.jpg" alt="Die betonierte Steilkurve des Autódromo de Terramar zwischen Pinien" loading="lazy"><figcaption>Autódromo de Terramar, Sant Pere de Ribes. Foto: Alberto-g-rovi, <a href="https://creativecommons.org/licenses/by/3.0/" rel="license">CC BY 3.0</a>, Wikimedia Commons.</figcaption></figure></li>
+      <li><h3>Tag 2 · Terramar → Val d'Aran</h3><p>Vorbei am Montserrat ins Berguedà, dann über den Port de la Bonaigua ins Val d'Aran. Erster Schotterabschnitt im Vorgebirge.</p><p class="km">ca. 320 km</p></li>
+      <li><h3>Tag 3 · Val d'Aran → Boltaña</h3><p>Durch die Ribagorza nach Sobrarbe. Übernachtung im Hotel Monasterio de Boltaña, einem Kloster aus dem 17. Jahrhundert am Fuß der Pyrenäen.</p><p class="km">ca. 180 km</p>
+        <figure class="day-photo"><img src="assets/img/hotel-boltana.jpg" alt="Steinfassade und Glockenturm des Hotel Monasterio de Boltaña" loading="lazy"><figcaption>Hotel Monasterio de Boltaña. Foto: Falk2, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>, Wikimedia Commons.</figcaption></figure></li>
+      <li><h3>Tag 4 · Boltaña → Jaca</h3><p>Am Rand des Nationalparks Ordesa entlang, dann über Pisten im Valle de Tena. Der schotterreichste Tag der Reise.</p><p class="km">ca. 180 km</p></li>
+      <li><h3>Tag 5 · Jaca → Navarra</h3><p>Durch die Täler von Ansó und Roncal in den Buchenwald von Irati. Übernachtung im Baztán-Tal.</p><p class="km">ca. 220 km</p></li>
       <li><h3>Tag 6 · Baztán → San Sebastián</h3><p>Grüne Hügel, dann der erste Blick auf den Atlantik. Küstenstraße über den Jaizkibel, Abschiedsabend in der Altstadt.</p><p class="km">ca. 150 km</p></li>
-      <li><h3>Tag 7 · Abreise</h3><p>Transfer zum Flughafen San Sebastián, Bilbao oder Biarritz. Die Autos fahren per Transporter zurück, darum müssen Sie sich nicht kümmern.</p></li>
+      <li><h3>Tag 7 · Abreise</h3><p>Transfer zum Flughafen San Sebastián, Bilbao oder Biarritz. Die Autos fahren per Transporter zurück.</p></li>
     </ol>
   </div>
 
   <div class="days-panel" id="tag-vuelta" data-tour="vuelta" hidden>
     <h2 class="section-title">Cimas Gran Vuelta, Tag für Tag.</h2>
     <ol class="day-list">
-      <li><h3>Tag 1 · Ankunft in Barcelona</h3><p>Abholung am Flughafen, Fahrt nach Osona. Fahrzeugübergabe, Briefing, Willkommensessen.</p></li>
-      <li><h3>Tag 2 · Osona → Val d'Aran</h3><p>Cerdanya, Schotter im Alt Urgell, Port de la Bonaigua. Ankunft im Hochtal des Val d'Aran.</p><p class="km">ca. 240 km</p></li>
-      <li><h3>Tag 3 · Val d'Aran → Aínsa</h3><p>Ribagorza und Sobrarbe. Zwei Nächte im mittelalterlichen Aínsa.</p><p class="km">ca. 190 km</p></li>
-      <li class="rest"><h3>Tag 4 · Standtag in Aínsa</h3><p>Wahlweise eine geführte Schotterrunde durch die Sierra de Guara oder ein freier Tag mit Wanderung am Rand von Ordesa.</p><p class="km">optional ca. 120 km</p></li>
-      <li><h3>Tag 5 · Aínsa → San Sebastián</h3><p>Die Königsetappe: Jaca, Roncal, Irati und hinunter an den Atlantik. Lang, aber jede Kurve wert.</p><p class="km">ca. 330 km</p></li>
+      <li><h3>Tag 1 · Ankunft und Autódromo de Terramar</h3><p>Abholung am Flughafen Barcelona, Fahrt nach Sitges. Fahrzeugübergabe und exklusive Einführungsrunden auf der historischen Steilwand-Rennstrecke von 1923. Willkommensessen am Meer.</p>
+        <figure class="day-photo"><img src="assets/img/terramar-steilkurve.jpg" alt="Die betonierte Steilkurve des Autódromo de Terramar zwischen Pinien" loading="lazy"><figcaption>Autódromo de Terramar. Foto: Alberto-g-rovi, <a href="https://creativecommons.org/licenses/by/3.0/" rel="license">CC BY 3.0</a>, Wikimedia Commons.</figcaption></figure></li>
+      <li><h3>Tag 2 · Terramar → Val d'Aran</h3><p>Montserrat, Berguedà, Schotter im Vorgebirge, Port de la Bonaigua. Ankunft im Hochtal des Val d'Aran.</p><p class="km">ca. 320 km</p></li>
+      <li><h3>Tag 3 · Val d'Aran → Boltaña</h3><p>Ribagorza und Sobrarbe. Zwei Nächte im Hotel Monasterio de Boltaña, einem restaurierten Kloster aus dem 17. Jahrhundert.</p><p class="km">ca. 180 km</p>
+        <figure class="day-photo"><img src="assets/img/hotel-boltana.jpg" alt="Steinfassade und Glockenturm des Hotel Monasterio de Boltaña" loading="lazy"><figcaption>Hotel Monasterio de Boltaña. Foto: Falk2, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>, Wikimedia Commons.</figcaption></figure></li>
+      <li class="rest"><h3>Tag 4 · Pausentag in Boltaña</h3><p>Ausschlafen, Spa und Pool im Kloster, ein Spaziergang ins mittelalterliche Aínsa. Wer fahren will: eine geführte Schotterrunde durch die Sierra de Guara.</p><p class="km">optional ca. 120 km</p>
+        <figure class="day-photo"><img src="assets/img/hotel-boltana-tal.jpg" alt="Das Hotel Monasterio de Boltaña im grünen Tal, darüber das alte Dorf auf dem Hügel" loading="lazy"><figcaption>Das Kloster im Tal, oben das alte Boltaña. Foto: Falk2, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>, Wikimedia Commons.</figcaption></figure></li>
+      <li><h3>Tag 5 · Boltaña → San Sebastián</h3><p>Die Königsetappe: Jaca, Roncal, Irati und hinunter an den Atlantik. Lang, aber jede Kurve wert.</p><p class="km">ca. 330 km</p></li>
       <li class="rest"><h3>Tag 6 · Standtag am Atlantik</h3><p>Küstenrunde über den Jaizkibel nach Hondarribia oder ein Tag am Strand von La Concha. Abends Pintxos.</p><p class="km">optional ca. 80 km</p></li>
-      <li><h3>Tag 7 · San Sebastián → Bardenas Reales</h3><p>Nach Süden in die Halbwüste. Schotterpisten zwischen Tafelbergen und der Felsnadel Castildetierra. Übernachtung in Olite.</p><p class="km">ca. 250 km</p></li>
-      <li><h3>Tag 8 · Bardenas → Barcelona</h3><p>Über Aragón und Lleida zurück nach Katalonien. Abschiedsessen in Osona.</p><p class="km">ca. 420 km</p></li>
+      <li><h3>Tag 7 · San Sebastián → Bardenas Reales</h3><p>Nach Süden in die Halbwüste. Schotterpisten zwischen Tafelbergen und der Felsnadel Castildetierra. Übernachtung im Hotel Aire de Bardenas bei Tudela, Designzimmer mitten in den Feldern am Rand der Wüste.</p><p class="km">ca. 230 km</p>
+        <figure class="day-photo"><img src="assets/img/bardenas-1.jpg" alt="Tafelberge in den Bardenas Reales" loading="lazy"><figcaption>Bardenas Reales. Hotelfoto von Aire de Bardenas folgt.</figcaption></figure></li>
+      <li><h3>Tag 8 · Tudela → Terramar</h3><p>Durch Aragón und Lleida zurück ans Mittelmeer. Letzte Runde auf dem Autódromo, Abschiedsessen in Sitges.</p><p class="km">ca. 440 km</p></li>
       <li><h3>Tag 9 · Abreise</h3><p>Transfer zum Flughafen Barcelona.</p></li>
     </ol>
   </div>
@@ -192,7 +199,7 @@
   <div class="wrap fleet-wrap">
     <div class="fleet-text">
       <h2 class="section-title light">Die Flotte.</h2>
-      <p>Sechs Kundenautos und ein identisches Lead-Auto, alle aus der Generation 996/997, alle für diese Reisen umgebaut. Jedes ein Einzelstück, das man nirgends mieten oder leasen kann.</p>
+      <p>Sechs Kundenautos und ein Lead-Auto, alle für diese Reisen umgebaut. Jedes ein Einzelstück, das man nirgends mieten oder leasen kann. Sie fahren dasselbe Auto die ganze Reise.</p>
       <ul class="spec">
         <li><span>Fahrwerk</span>Höherlegung, verstärkte Dämpfer</li>
         <li><span>Reifen</span>All-Terrain-Profil</li>
@@ -203,9 +210,29 @@
       </ul>
       <p class="fineprint light">Die Bilder auf dieser Seite sind Visualisierungen. Echte Fotos folgen mit dem ersten fertigen Auto im Frühjahr 2027.</p>
     </div>
-    <figure class="fleet-fig">
-      <img src="assets/img/cockpit-red.jpg" alt="Innenraum mit hellem Leder, Blick durch die Seitenscheibe auf Berge" loading="lazy">
-    </figure>
+  </div>
+
+  <div class="wrap cars">
+    <article class="car">
+      <div class="car-head">
+        <h3>997 Tarngrün</h3>
+        <p>Oliv mit Topografie-Linien, Frontbügel mit vier Zusatzscheinwerfern, Innenraum in dunkelbraunem Leder.</p>
+      </div>
+      <div class="car-views">
+        <figure><img src="assets/img/hero-997-gravel.jpg" alt="997 in Tarngrün von vorne auf einer staubigen Schotterpiste" loading="lazy"><figcaption>Außen</figcaption></figure>
+        <figure><img src="assets/img/cockpit-997.jpg" alt="Cockpit des 997 mit braunem Leder und Funkgerät an der Mittelkonsole" loading="lazy"><figcaption>Innen</figcaption></figure>
+      </div>
+    </article>
+    <article class="car">
+      <div class="car-head">
+        <h3>Cayman Rot</h3>
+        <p>Glutrot mit Bergsilhouette an der Flanke, Dachträger mit wasserdichten Boxen, Innenraum in hellem Leder.</p>
+      </div>
+      <div class="car-views">
+        <figure><img src="assets/img/car-red-side.jpg" alt="Rotes Safari-Coupé von der Seite vor einer Pyrenäen-Bergkette" loading="lazy"><figcaption>Außen</figcaption></figure>
+        <figure><img src="assets/img/cockpit-red.jpg" alt="Innenraum mit hellem Leder, Blick durch die Seitenscheibe auf Berge" loading="lazy"><figcaption>Innen</figcaption></figure>
+      </div>
+    </article>
   </div>
 </section>
 
