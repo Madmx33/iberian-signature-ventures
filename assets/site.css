@@ -77,7 +77,14 @@ figcaption{font-size:14px;color:var(--stone);margin-top:10px}
 .price{margin-top:auto;font-size:15px}
 .price strong{font-family:var(--serif);font-size:34px;font-weight:500}
 .price small{display:block;color:var(--stone);font-size:14px}
-.tours .fineprint{margin-top:24px}
+.price-table-wrap{margin-top:40px;max-width:760px}
+.price-table{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+.price-table th,.price-table td{padding:12px 16px 12px 0;border-bottom:1px solid var(--line);text-align:left}
+.price-table thead th{font-weight:600;color:var(--stone);font-size:14px}
+.price-table tbody th{font-weight:400}
+.price-table td{text-align:right;padding-right:0;white-space:nowrap}
+.price-table thead th:not(:first-child){text-align:right;padding-right:0}
+.price-incl{margin-top:16px;font-size:15px;color:#4a463d}
 
 /* Route */
 .route{background:var(--night);color:var(--sand);padding:110px 0 90px}
