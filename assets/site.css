@@ -242,3 +242,7 @@ body{font-variation-settings:"WONK" 0}
 .dates-note a{color:inherit}
 @media (max-width:900px){.rental{padding:72px 0}.rental-wrap{grid-template-columns:1fr;gap:40px}}
 .rental-spec{border-top-color:var(--line)}
+.rental-addon{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-top:96px}
+.addon-title{font-size:34px}
+.rental-addon .rental-price{margin:20px 0 12px}
+@media (max-width:900px){.rental-addon{grid-template-columns:1fr;gap:32px;margin-top:64px}}
