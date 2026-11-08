@@ -34,17 +34,65 @@
   show('atlantico');
 
   var form = document.getElementById('interest');
-  document.querySelectorAll('a[data-rental]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      var sel = form && form.querySelector('select[name="tour"]');
-      if (!sel) return;
-      Array.prototype.forEach.call(sel.options, function (o) {
-        if (o.text.indexOf('mieten') !== -1) sel.value = o.value || o.text;
-      });
+  var tourSel = form && form.querySelector('select[name="tour"]');
+  var terminSel = form && form.querySelector('select[name="termin"]');
+  // Termine aus der Terminliste lesen: [{tour, id, label}]
+  var termine = [];
+  document.querySelectorAll('.dates-year').forEach(function (block) {
+    var m = (block.querySelector('h3') || {}).textContent.match(/\d{4}/);
+    var year = m ? m[0] : '';
+    block.querySelectorAll('.dates-list li').forEach(function (li, i) {
+      var a = li.querySelector('a[data-tour]');
+      var d = li.querySelector('.date');
+      if (!a || !d) return;
+      var t = { tour: a.dataset.tour, id: year + '-' + i, label: d.textContent.trim() + ' ' + year };
+      termine.push(t);
+      var book = document.createElement('a');
+      book.href = '#anfrage';
+      book.className = 'date-book';
+      book.textContent = 'Vormerken';
+      book.addEventListener('click', function () { setTour(t.tour, t.id); });
+      li.querySelector('.date-tour').appendChild(book);
     });
+  });
+  function setTour(tour, id) {
+    if (!tourSel) return;
+    tourSel.value = tour;
+    fillTermine();
+    if (id) terminSel.value = id;
+  }
+  function fillTermine() {
+    var tour = tourSel.value;
+    terminSel.length = 1;
+    termine.forEach(function (t) {
+      if (tour !== 'offen' && t.tour !== tour) return;
+      var name = t.tour === 'vuelta' ? 'Gran Vuelta' : 'Atlántica';
+      terminSel.add(new Option(tour === 'offen' ? t.label + ' · ' + name : t.label, t.id));
+    });
+    var miete = tour === 'mieten';
+    form.querySelector('.form-termin').hidden = miete;
+    form.querySelectorAll('.form-miete').forEach(function (l) { l.hidden = !miete; });
+  }
+  if (tourSel) {
+    tourSel.addEventListener('change', function () { fillTermine(); });
+    fillTermine();
+  }
+  document.querySelectorAll('a[data-rental]').forEach(function (a) {
+    a.addEventListener('click', function () { setTour('mieten'); });
   });
   if (form) form.addEventListener('submit', function (e) {
     e.preventDefault();
-    form.querySelector('.form-msg').hidden = false;
+    var msg = form.querySelector('.form-msg');
+    var was = tourSel.options[tourSel.selectedIndex].text.split(' · ')[0];
+    var wann = '';
+    if (tourSel.value === 'mieten') {
+      var v = form.miete_von.value, b = form.miete_bis.value;
+      var fmt = function (x) { var p = x.split('-'); return p[2] + '.' + p[1] + '.' + p[0]; };
+      if (v && b) wann = ', ' + fmt(v) + ' bis ' + fmt(b);
+    } else if (terminSel.value) {
+      wann = ', ' + terminSel.options[terminSel.selectedIndex].text;
+    }
+    msg.textContent = 'Danke! Vorgemerkt: ' + was + wann + '. Dies ist ein Prototyp, Ihre Angaben wurden nicht gesendet.';
+    msg.hidden = false;
   });
 })();

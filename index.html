@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,WONK@9..144,400..600,0..1&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=20261108f">
+<link rel="stylesheet" href="assets/site.css?v=20261108g">
 </head>
 <body>
 
@@ -373,17 +373,26 @@
   <div class="contact-shade"></div>
   <div class="wrap contact-inner">
     <h2 class="section-title light">Auf die Vormerkliste.</h2>
-    <p>Unverbindlich und kostenlos. Wir melden uns, sobald die ersten Termine feststehen.</p>
+    <p>Unverbindlich und kostenlos. Wählen Sie Tour und Wunschtermin, wir melden uns, sobald die Buchung öffnet.</p>
     <form class="form" id="interest">
       <label>Name<input name="name" autocomplete="name" required></label>
       <label>E-Mail<input type="email" name="email" autocomplete="email" required></label>
       <label>Tour
         <select name="tour">
-          <option>Cimas Atlántica · 7 Tage</option>
-          <option>Cimas Gran Vuelta · 9 Tage</option>
-          <option>Selbst fahren: Auto mieten (ab 5 Tagen)</option>
-          <option>Noch unentschlossen</option>
+          <option value="atlantico">Cimas Atlántica · 7 Tage</option>
+          <option value="vuelta">Cimas Gran Vuelta · 9 Tage</option>
+          <option value="mieten">Selbst fahren: Auto mieten (ab 5 Tagen)</option>
+          <option value="offen">Noch unentschlossen</option>
         </select>
+      </label>
+      <label class="form-termin">Wunschtermin
+        <select name="termin"><option value="">Flexibel, Termin noch offen</option></select>
+      </label>
+      <label class="form-miete" hidden>Mieten ab
+        <input type="date" name="miete_von" min="2027-11-15">
+      </label>
+      <label class="form-miete" hidden>Mieten bis
+        <input type="date" name="miete_bis" min="2027-11-20">
       </label>
       <label>Personen
         <select name="pax"><option>2 Personen, 1 Auto</option><option>1 Person, 1 Auto</option><option>Gruppe / mehrere Autos</option></select>
@@ -402,6 +411,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=20261108e"></script>
+<script src="assets/site.js?v=20261108f"></script>
 </body>
 </html>
