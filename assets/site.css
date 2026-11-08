@@ -60,6 +60,7 @@ section{scroll-margin-top:70px}
 .intro-text p{max-width:56ch}
 .intro-fig{margin:0}
 .intro-fig img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.intro-fig img.wide{aspect-ratio:3/2;object-position:60% 50%}
 figcaption{font-size:14px;color:var(--stone);margin-top:10px}
 
 /* Tours */
