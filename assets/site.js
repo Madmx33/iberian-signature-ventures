@@ -24,6 +24,15 @@
   show('atlantico');
 
   var form = document.getElementById('interest');
+  document.querySelectorAll('a[data-rental]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var sel = form && form.querySelector('select[name="tour"]');
+      if (!sel) return;
+      Array.prototype.forEach.call(sel.options, function (o) {
+        if (o.text.indexOf('mieten') !== -1) sel.value = o.value || o.text;
+      });
+    });
+  });
   if (form) form.addEventListener('submit', function (e) {
     e.preventDefault();
     form.querySelector('.form-msg').hidden = false;

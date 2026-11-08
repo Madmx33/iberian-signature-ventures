@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,WONK@9..144,400..600,0..1&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=20261108c">
+<link rel="stylesheet" href="assets/site.css?v=20261108d">
 </head>
 <body>
 
@@ -25,6 +25,7 @@
   <nav class="nav-links" aria-label="Hauptnavigation">
     <a href="#touren">Touren</a>
     <a href="#termine">Termine</a>
+    <a href="#mieten">Mieten</a>
     <a href="#route">Route</a>
     <a href="#flotte">Flotte</a>
     <a href="#leistungen">Leistungen</a>
@@ -154,7 +155,30 @@
         </ul>
       </div>
     </div>
-    <p class="dates-note">Im August und von Dezember bis März fahren keine geführten Touren. Termine vorläufig.</p>
+    <p class="dates-note">Im August und von Dezember bis März fahren keine geführten Touren. Dann können Sie <a href="#mieten">die Autos selbst mieten</a>. Termine vorläufig.</p>
+  </div>
+</section>
+
+<section class="rental" id="mieten">
+  <div class="wrap rental-wrap">
+    <div class="rental-text">
+      <p class="kicker dark">Ohne Konvoi</p>
+      <h2 class="section-title">Selbst fahren.</h2>
+      <p class="section-lead">Außerhalb der Tourmonate vermieten wir unsere Safari-Porsche für eigene Abenteuer: an die Costa Brava, durch die Weinberge des Priorat oder hinauf in die Berge. Sie planen die Route, wir übergeben das Auto vollgetankt und erklärt.</p>
+      <p class="rental-price"><strong>383 €</strong> <small>pro Tag inkl. IVA · ab 5 Tagen, zum Beispiel 1.915 € für 5 Tage</small></p>
+      <ul class="spec rental-spec">
+        <li><span>Zeitraum</span>Januar bis März, August, Dezember</li>
+        <li><span>Mindestmiete</span>5 Tage</li>
+        <li><span>Übernahme</span>Abholung und Rückgabe am selben Ort im Raum Barcelona, mit Einweisung</li>
+        <li><span>Inklusive</span>Versicherung für Selbstfahrer, Wartung und Reinigung</li>
+        <li><span>Nicht inklusive</span>Kraftstoff und Maut; Kaution bei Übernahme</li>
+      </ul>
+      <a class="btn" href="#anfrage" data-rental="1">Mietanfrage stellen</a>
+    </div>
+    <figure class="rental-fig">
+      <img src="assets/img/car-red-side.jpg" alt="Cierzo, der rote Safari-Porsche, vor einer Pyrenäen-Bergkette" loading="lazy">
+      <figcaption>Cierzo, bereit für die eigene Route.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -317,6 +341,7 @@
   <details><summary>Wie groß ist die Gruppe?</summary><p>Höchstens sechs Kundenautos, also maximal zwölf Gäste, plus das Lead-Auto.</p></details>
   <details><summary>Können wir uns am Steuer abwechseln?</summary><p>Ja. Beide Personen eines Paares können fahren, sofern beide einen gültigen Führerschein haben.</p></details>
   <details><summary>Was passiert bei einer Panne?</summary><p>Unser Mechaniker fährt im Lead-Auto mit, Ersatzteile und Werkzeug an Bord. Für den Fall der Fälle steht ein Ersatzauto bereit.</p></details>
+  <details><summary>Kann ich ein Auto auch ohne Tour mieten?</summary><p>Ja. Im Januar bis März, im August und im Dezember vermieten wir die Autos für eigene Fahrten, ab 5 Tagen für 383 € pro Tag inklusive IVA und Versicherung, ohne Kraftstoff und Maut. Abholung und Rückgabe am selben Ort.</p></details>
   <details><summary>Wann kann ich buchen?</summary><p>Die ersten Termine ab September 2027 werden voraussichtlich im ersten Quartal 2027 freigeschaltet. Mit einer unverbindlichen Anfrage stehen Sie auf der Vormerkliste.</p></details>
 </section>
 
@@ -333,6 +358,7 @@
         <select name="tour">
           <option>Cimas Atlántica · 7 Tage</option>
           <option>Cimas Gran Vuelta · 9 Tage</option>
+          <option>Selbst fahren: Auto mieten (ab 5 Tagen)</option>
           <option>Noch unentschlossen</option>
         </select>
       </label>
@@ -353,6 +379,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=20261108c"></script>
+<script src="assets/site.js?v=20261108d"></script>
 </body>
 </html>

@@ -223,3 +223,19 @@ body{font-variation-settings:"WONK" 0}
 .dates-list .date-note{grid-column:1/-1;font-size:13px;color:var(--stone)}
 .dates-note{margin-top:24px;font-size:14px;color:var(--stone)}
 @media (max-width:900px){.dates{padding:72px 0}.dates-grid{grid-template-columns:1fr;gap:40px}.dates-list li{grid-template-columns:1fr}.dates-list .date-tour{text-align:left}}
+
+/* Selbst fahren */
+.rental{background:var(--sand-2);padding:110px 0}
+.rental-wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.kicker.dark{color:var(--ember)}
+.rental-price{margin:28px 0 8px;font-size:15px;color:#4a463d}
+.rental-price strong{font-family:var(--serif);font-size:34px;font-weight:500;color:var(--ink);margin-right:6px}
+.rental-spec{margin:20px 0 32px}
+.rental-spec li{color:var(--ink);border-color:var(--line)}
+.rental-spec li span{color:var(--stone)}
+.rental-fig{margin:0}
+.rental-fig img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.rental-fig figcaption{font-size:14px;color:var(--stone);margin-top:10px}
+.dates-note a{color:inherit}
+@media (max-width:900px){.rental{padding:72px 0}.rental-wrap{grid-template-columns:1fr;gap:40px}}
+.rental-spec{border-top-color:var(--line)}
