@@ -1,3 +1,13 @@
+// Always open the page at the top, also after reload or with an old #anchor in the URL
+(function () {
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  function top() { window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); }
+  top();
+  window.addEventListener('load', top);
+  window.addEventListener('pageshow', function (e) { if (e.persisted) top(); });
+})();
+
 // Tour switch: map tabs, day-by-day panels, "Tag für Tag" links
 (function () {
   function show(tour) {
