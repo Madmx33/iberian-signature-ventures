@@ -208,3 +208,18 @@ figcaption{font-size:14px;color:var(--stone);margin-top:10px}
 
 /* Fraunces: keine schiefen Wonky-Buchstaben */
 body{font-variation-settings:"WONK" 0}
+
+/* Termine */
+.dates{padding:110px 0}
+.dates-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px}
+.dates-year h3{font-size:24px;margin-bottom:14px}
+.dates-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.dates-list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.dates-list .date{font-weight:600}
+.dates-list .date-tour{color:#4a463d;text-align:right;white-space:nowrap}
+.dates-list .date-tour a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.dates-list li.date-vuelta .date-tour a{color:var(--olive)}
+.dates-list li.date-atlantico .date-tour a{color:var(--ember)}
+.dates-list .date-note{grid-column:1/-1;font-size:13px;color:var(--stone)}
+.dates-note{margin-top:24px;font-size:14px;color:var(--stone)}
+@media (max-width:900px){.dates{padding:72px 0}.dates-grid{grid-template-columns:1fr;gap:40px}.dates-list li{grid-template-columns:1fr}.dates-list .date-tour{text-align:left}}
