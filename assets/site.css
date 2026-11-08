@@ -140,6 +140,9 @@ figcaption{font-size:14px;color:var(--stone);margin-top:10px}
 .day-photo{margin:16px 0 8px}
 .day-photo img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .day-photo figcaption a{color:inherit}
+.day-photo.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.day-photo.pair img{aspect-ratio:3/2}
+.day-photo.pair figcaption{grid-column:1/-1}
 
 /* Included */
 .included{padding-top:120px;padding-bottom:80px}
