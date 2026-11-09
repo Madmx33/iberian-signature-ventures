@@ -248,3 +248,34 @@ body{font-variation-settings:"WONK" 0}
 .addon-title{font-size:34px}
 .rental-addon .rental-price{margin:20px 0 12px}
 @media (max-width:900px){.rental-addon{grid-template-columns:1fr;gap:32px;margin-top:64px}}
+
+/* Tour-Karten */
+.tour-claim{font-family:var(--serif);font-size:19px;color:#4a463d;margin-bottom:12px}
+
+/* Hotels */
+.stay{padding-top:40px;padding-bottom:120px}
+.stay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px}
+.stay-card{background:var(--sand-2);display:flex;flex-direction:column}
+.stay-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.stay-body{padding:24px 24px 20px;display:flex;flex-direction:column;flex:1}
+.stay-meta{font-size:14px;color:var(--stone);margin-bottom:6px}
+.stay-body h3{font-size:24px}
+.stay-body p{font-size:16px}
+.stay-credit{margin-top:auto;font-size:12px!important;color:var(--stone);margin-bottom:0}
+.stay-credit a{color:inherit}
+.stay-more{margin-top:32px;max-width:70ch;color:#4a463d}
+
+/* Mehr als Hotel und Mietwagen */
+.why{background:var(--sand-2);padding:110px 0}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:44px}
+.why-grid>div{border-top:2px solid var(--olive);padding-top:18px}
+.why-grid h3{font-size:22px}
+.why-grid p{font-size:16px;color:#4a463d;margin:0}
+
+@media (max-width:900px){
+  .stay{padding-top:24px;padding-bottom:72px}
+  .stay-grid{grid-template-columns:1fr;gap:28px;margin-top:32px}
+  .why{padding:72px 0}
+  .why-grid{grid-template-columns:1fr;gap:28px;margin-top:32px}
+}
+@media (min-width:901px) and (max-width:1100px){.why-grid{grid-template-columns:1fr 1fr}.nav-links{gap:20px}}
